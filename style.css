@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #0f172a;
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    color: #38bdf8;
+}
+
+nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero h3 {
+    font-size: 28px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 12px 22px;
+    margin-right: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary {
+    background: #38bdf8;
+    color: #0b1120;
+}
+
+.secondary {
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+    color: #38bdf8;
+}
+
+.about {
+    max-width: 800px;
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background: #1e293b;
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project {
+    background: #111827;
+    border: 1px solid #334155;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.project h3 {
+    color: #f8fafc;
+    margin-bottom: 15px;
+}
+
+.project p {
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+.project a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.certification {
+    background: #111827;
+    border-left: 4px solid #38bdf8;
+    padding: 25px;
+    max-width: 700px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #0f172a;
+    color: #94a3b8;
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h3 {
+        font-size: 22px;
+    }
+}
